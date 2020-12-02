@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/jquery.circlify.css" rel="stylesheet" type="text/css" />
+    <script src="circles.js"></script>
+
+    
+   
+
+    <style>
+        h1{
+            font-size: 36px;
+            color: teal;
+        }
+        p{
+            font-size: 22px;
+        }
+        body{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .all{
+            margin: 10%,10% ;
+            flex-direction: column;
+            display: flex;
+            background-color: wheat;
+            
+        }
+        .top{
+            background-color: #E6F8B2 ;
+            flex-direction: column ;
+            align-self: center;
+            width: 1000px;
+            text-align: center;
+            margin-top: 10%;
+            padding: 5%;
+        }
+        
+        .right{
+            background-color: #E6F8B2;
+            
+            flex-direction: column ;
+            align-self: center;
+            width: 1000px;
+            text-align: center;
+            margin-bottom: 20%;
+            padding: 0 5%;
+        }
+        .hor{
+            flex: 4;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .picsize{
+            width: 300px;          
+            margin-left: 0px;
+        }
+        .inform{
+            background-color: #CDE77F;
+            flex-direction: row ;
+            justify-content: space-between;
+            display: flex;
+            height: 300px;
+            align-items: center;
+        }
+        .inform2{
+            background-color: #d7ffab;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 7%;
+        }
+        .inform3{
+            background-color:#709176;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 7%;
+        }
+        .inform4{
+            background-color:#ADFC92;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 7%;
+        }
+        .skill{
+            flex-direction: row ;
+            justify-content: space-around;
+            display: flex;
+            height: 100px;
+            align-items: center
+        }
+        .skill li{
+           
+            display: flex;
+            flex-direction: column;
+        }
+        .pie50 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #655;
+            justify-content: space-around;
+            background-image: linear-gradient(to right, transparent 50%, yellowgreen 0);
+        }
+        .pie50::before {
+            content: '';
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background-color:  yellowgreen;
+            transform-origin: left;
+            transform: rotate(.0turn);
+        }
+        .pie65 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #655;
+            justify-content: space-around;
+            background-image: linear-gradient(to right, transparent 50%, yellowgreen 0);
+        }
+        .pie65::before {
+            content: '';
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background-color:  yellowgreen;
+            transform-origin: left;
+            transform: rotate(.1turn);
+        }
+        .pie80 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #655;
+            justify-content: space-around;
+            background-image: linear-gradient(to right, transparent 50%, yellowgreen 0);
+        }
+        .pie80::before {
+            content: '';
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            background-color:  yellowgreen;
+            transform-origin: left;
+            transform: rotate(.2turn);
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="pie"></div>
+    <div class="all">
+
+
+		<!--上半部-->
+
+
+		<div class="top">
+			<div class="inform"> 
+                <div>
+                    <img src="img/01.jpg" class="picsize">
+                </div>
+                <div class="hor">
+                    <h1>郭睿驛</h1>
+                    <p>『----戰勝自己是人生中最重要的事----』</p>
+                    <p>新北市</p>
+                    <p>電話0987948483</p>
+                    <p><email:><larrykuo1102@gmail class="com">larrykuo1102@gmail.com</larrykuo1102@gmail></email:l></p>
+
+
+                </div>
+               
+			</div>
+			<br>
+
+
+			
+
+			
+		</div>
+		<!--上二 學歷-->
+
+
+	<div class="right">
+
+        <div class="inform2">
+            <h1> 學歷</h1>
+            <p>國小--新北市鷺江國小</p>
+            <p>國中--新北市三和國中</p>
+            <p>高中--新北市新北高中</p>
+            <p>大學--私立中原大學</p>
+            <div id="circles-1"></div>
+        </div>
+           
+        
+        
+        <!--專業技能-->
+        <div class="inform3">
+            <h1>專業技能</h1>
+            <ul class="skill">
+
+                <li>
+                    <div class="pie80"></div>
+                    <p class="littleword" style="font-size: 16px">音樂表演</p>
+                </li>
+                <li>
+                    <div class="pie65"></div>
+                    <p class="littleword" style="font-size: 16px">音樂軟體</p>
+                </li>
+                <li>
+                    <div class="pie50"></div>
+                    <p class="littleword" style="font-size: 16px">影片剪輯</p>
+                </li>
+                
+                <li>
+                    <div class="pie50"></div>
+                    <p class="littleword" style="font-size: 16px">表演藝術</p>
+                </li>
+                
+            </ul>
+        </div>
+
+
+        <!--程式技能-->
+        <div class="inform3">
+            <h1>程式能力</h1>
+            <ul class="skill">
+
+                <li>
+                    <div class="pie80"></div>
+                    <p class="littleword" style="font-size: 16px">Ｃ＋＋</p>
+                </li>
+                <li>
+                    <div class="pie65"></div>
+                    <p class="littleword" style="font-size: 16px">ＰＹＴＨＯＮ</p>
+                </li>
+                <li>
+                    <div class="pie50"></div>
+                    <p class="littleword" style="font-size: 16px">ＪＡＶＡ</p>
+                </li>
+                
+                <li>
+                    <div class="pie50"></div>
+                    <p class="littleword" style="font-size: 16px">ＡＳＳＥＭＢＬＹ</p>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="inform4">
+            
+            <h1>社團經歷 </h1>
+            <p style="font-weight: bolder;font-size: 26;" >吉他社&nbsp;&nbsp;&nbsp;教學長</p>
+            <p>在吉他社裡我負責教學的職位，每個禮拜的二三四都必須到現場教學</p>
+            <p>除了自己必須要下去教學以外，也要教大二的學弟妹教學中的技巧</p>
+            <p>有什麼方式可以讓新生可以更好理解</p><br>
+            <p style="font-weight: bold;">吉他營&nbsp;&nbsp;&nbsp;節奏長</p>
+            <p>在吉他營中各個組別的其中一個節奏組</p>
+            <p>在營隊中負責帶領參加的小學員節奏的部分</p>
+            <p>身為組長，必須要熟練每一種樂器</p>
+            <p>包含了木箱鼓、莎莎、金貝、幫狗，才能將組員的能力一起提升</p>
+        </div>
+    
+    
+           
+
+            
+		
+			
+        <p>contact us</p>
+        <img src="img/02.jpg" class="picsize">
+		<br><br><br>
+		
+	</div>
+</body>
+</html>
